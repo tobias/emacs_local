@@ -15,7 +15,7 @@
 (setq mac-option-modifier 'meta)
 
 ;(set-face-font `default "-apple-envy code r-medium-r-normal--14-0-72-72-m-0-iso10646-1")
-(set-face-font `default "-apple-inconsolata-medium-r-normal--16-0-72-72-m-0-iso10646-1")
+(when window-system (set-face-font `default "-apple-inconsolata-medium-r-normal--18-0-72-72-m-0-iso10646-1"))
 
 
 (set-background-color "black")
@@ -24,6 +24,10 @@
 ;; Never iconify...
 (global-unset-key [(control z)])
 (global-unset-key [(control x) (control z)])
+
+;; Don't F'ing load gnus, since it hangs for quite a while trying to
+;; find an nntp server
+(global-unset-key (kbd "C-c g"))
 
 ;; Ctrl-Tab switches buffers
 ;(global-set-key [(ctrl tab)] 'bury-buffer)
@@ -63,8 +67,10 @@
 ;(color-theme-hober)
 
 ;; always highlight the current line
-;(when window-system (global-hl-line-mode t)
+(when window-system (global-hl-line-mode t))
 ;      (custom-set-faces `(hl-line ((t (:inherit highlight :background "grey30"))))))
 ;                    (set-face-background 'hl-line "yellow"))
 ;;(set-face-foreground 'hl-line 'inherit)
 
+;; textile mode
+(require `textile-mode)
