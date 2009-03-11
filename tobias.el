@@ -75,6 +75,9 @@
 ;; textile mode
 (require `textile-mode)
 
-(require `vline)
-(require `col-highlight)
+;; highlight current column
+(require 'vline)
+(require 'col-highlight)
 (toggle-highlight-column-when-idle 1)
+(setq col-highlight-vline-face-flag t)
+(col-highlight-set-interval 2)
