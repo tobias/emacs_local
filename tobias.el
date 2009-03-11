@@ -74,3 +74,7 @@
 
 ;; textile mode
 (require `textile-mode)
+
+(require `vline)
+(require `col-highlight)
+(toggle-highlight-column-when-idle 1)
