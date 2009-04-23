@@ -15,7 +15,7 @@
 (setq mac-option-modifier 'meta)
 
 ;(set-face-font `default "-apple-envy code r-medium-r-normal--14-0-72-72-m-0-iso10646-1")
-(when window-system (set-face-font `default "-apple-inconsolata-medium-r-normal--18-0-72-72-m-0-iso10646-1"))
+(when window-system (set-face-font `default "-apple-inconsolata-medium-r-normal--14-0-72-72-m-0-iso10646-1"))
 
 
 (set-background-color "black")
@@ -40,11 +40,30 @@
 ;; cd ~/.rinari
 ;; git submodule init
 ;; git submodule update
+(require 'ruby-electric)
+(add-hook 'ruby-mode-hook '(lambda () (ruby-electric-mode)))
+
 (add-to-list 'load-path (concat dotfiles-dir "../.rinari"))
 (require 'rinari)
 
+(setq rinari-tags-file-name "TAGS")
+
+;; make the rinari navigation a bit shorter
+(global-set-key "\C-cfc" 'rinari-find-controller)
+(global-set-key "\C-cfe" 'rinari-find-environment)
+(global-set-key "\C-cff" 'rinari-find-file-in-project)
+(global-set-key "\C-cfh" 'rinari-find-helper)
+(global-set-key "\C-cfi" 'rinari-find-migration)
+(global-set-key "\C-cfj" 'rinari-find-javascript)
+(global-set-key "\C-cfm" 'rinari-find-model)
+(global-set-key "\C-cfn" 'rinari-find-configuration)
+(global-set-key "\C-cfs" 'rinari-find-stylesheet)
+(global-set-key "\C-cft" 'rinari-find-test)
+(global-set-key "\C-cfv" 'rinari-find-view)
+
 (add-to-list 'load-path (concat dotfiles-dir "../.emacs.local/vendor"))
 
+;(require 'viper)
 ;; for git
 (require 'vc-git)
 (when (featurep 'vc-git) (add-to-list 'vc-handled-backends 'GIT))
