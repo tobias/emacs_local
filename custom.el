@@ -19,7 +19,7 @@
  '(font-lock-comment-face ((nil (:foreground "cornflowerblue"))))
  '(font-lock-constant-face ((((class color) (background light)) (:foreground "firebrick"))))
  '(font-lock-keyword-face ((nil (:foreground "khaki"))))
- '(font-lock-string-face ((nil (:foreground "PaleGreen" :slant italic))))
+ '(font-lock-string-face ((nil (:foreground "pink" :slant italic))))
  '(font-lock-type-face ((((class color) (min-colors 88) (background dark)) (:foreground "limegreen"))))
  '(font-lock-variable-name-face ((nil (:foreground "yellow"))))
  '(hl-line ((t (:inherit highlight :background "grey10")))))
