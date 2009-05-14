@@ -32,6 +32,14 @@
 ;; Ctrl-Tab switches buffers
 ;(global-set-key [(ctrl tab)] 'bury-buffer)
 
+(global-set-key (kbd "M-SPC") 'hippie-expand)
+
+(make-hippie-expand-function
+ '(try-expand-dabbrev-visible
+   try-expand-dabbrev-from-kill
+   try-expand-dabbrev-all-buffers
+   try-complete-file-name-partially
+   try-complete-file-name))
 
 ;; load rinari
 ;; to install rinari:
