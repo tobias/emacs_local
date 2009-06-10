@@ -15,7 +15,8 @@
 (setq mac-option-modifier 'meta)
 
 ;(set-face-font `default "-apple-envy code r-medium-r-normal--14-0-72-72-m-0-iso10646-1")
-(when window-system (set-face-font `default "-apple-inconsolata-medium-r-normal--14-0-72-72-m-0-iso10646-1"))
+;; moved to system specific files
+;(when window-system (set-face-font `default "-apple-inconsolata-medium-r-normal--14-0-72-72-m-0-iso10646-1"))
 
 
 (set-background-color "black")
