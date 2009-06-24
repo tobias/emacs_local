@@ -15,7 +15,7 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(col-highlight ((t (:background "Grey10"))))
- '(font-lock-builtin-face ((((class color) (background light)) (:foreground "red"))))
+ '(font-lock-builtin-face ((t (:foreground "orange"))))
  '(font-lock-comment-face ((nil (:foreground "cornflowerblue"))))
  '(font-lock-constant-face ((((class color) (background light)) (:foreground "firebrick"))))
  '(font-lock-keyword-face ((nil (:foreground "khaki"))))
