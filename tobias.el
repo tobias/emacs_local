@@ -33,7 +33,7 @@
 ;; Ctrl-Tab switches buffers
 ;(global-set-key [(ctrl tab)] 'bury-buffer)
 
-(global-set-key (kbd "M-SPC") 'hippie-expand)
+(global-set-key (kbd "M-RET") 'hippie-expand)
 
 (make-hippie-expand-function
  '(try-expand-dabbrev-visible
