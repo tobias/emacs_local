@@ -14,7 +14,8 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(col-highlight ((t (:background "Grey10"))))
+ ;;'(col-highlight ((t (:background "Grey10"))))
+ '(col-highlight ((t (:background "Black"))))
  '(font-lock-builtin-face ((t (:foreground "orange"))))
  '(font-lock-comment-face ((nil (:foreground "cornflowerblue"))))
  '(font-lock-constant-face ((((class color) (background light)) (:foreground "firebrick"))))
@@ -22,4 +23,5 @@
  '(font-lock-string-face ((nil (:foreground "pink" :slant italic))))
  '(font-lock-type-face ((((class color) (min-colors 88) (background dark)) (:foreground "limegreen"))))
  '(font-lock-variable-name-face ((nil (:foreground "yellow"))))
- '(hl-line ((t (:inherit highlight :background "grey10")))))
+ ;; '(hl-line ((t (:inherit highlight :background "grey10")))))
+  '(hl-line ((t (:inherit highlight :background "black")))))

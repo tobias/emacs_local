@@ -19,7 +19,8 @@
 ;(when window-system (set-face-font `default "-apple-inconsolata-medium-r-normal--14-0-72-72-m-0-iso10646-1"))
 
 
-(set-background-color "black")
+;(set-background-color "black")
+(set-background-color "grey12")
 (set-foreground-color "white")
 
 ;; Never iconify...
@@ -71,6 +72,9 @@
 (global-set-key "\C-cfv" 'rinari-find-view)
 
 (add-to-list 'load-path (concat dotfiles-dir "../.emacs.local/vendor"))
+
+;; txmt links
+(require `textmate-links)
 
 ;(require 'viper)
 ;; for git
