@@ -113,3 +113,5 @@
 (toggle-highlight-column-when-idle 1)
 (setq col-highlight-vline-face-flag t)
 (col-highlight-set-interval 2)
+
+(require 'ack)
