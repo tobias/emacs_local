@@ -115,3 +115,8 @@
 ;(col-highlight-set-interval 2)
 
 (require 'ack-emacs)
+
+(global-set-key (kbd "C-c C-c t") '(lambda ()
+                                    (interactive)
+                                    (set-buffer-modified-p 1)
+                                    (save-buffer)))
